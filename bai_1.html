@@ -5,26 +5,30 @@
     <title>Title</title>
 </head>
 <body>
-<input type="number" id="tiente"><br>
-from:
-<select name="" id="F">
+<h1>Chuyển Đổi Tiền Tệ</h1>
+<div class="form">
+<input class="input1" type="number" id="tiente"><br>
+    From:
+<select class="index" name="" id="F">
     <option value="23000">viet nam</option>
     <option value="2.47">lao</option>
     <option value="1">USD</option>
     <option value="27997.31">EURO</option>
     <option value="31557.28">Anh</option>
-</select><br>
+</select>
 to:
-<select name="" id="T">
+<select class="index" name="" id="T">
     <option value="23000">viet nam</option>
     <option value="2.47">lao</option>
     <option value="1">USD</option>
     <option value="27997.31">EURO</option>
     <option value="31557.28">Anh</option>
 </select><br>
-<input type="button" value="quy doi" onclick="quydoi()" ><br>
-
-ket qua : <input type="text" id="ketqua"><br>
+<input class="quydoi" type="button" value="quy doi" onclick="quydoi()" ><br>
+<div class="tong">
+ket qua : <input  class="ketqua" type="text" id="ketqua"><br>
+    <img src="2656_lich-su-tien-te.jpg" alt="">
+</div>
 
 <script>
     function quydoi(){
@@ -36,5 +40,60 @@ ket qua : <input type="text" id="ketqua"><br>
 
     }
 </script>
+</div>
 </body>
 </html>
+<style>
+    * {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 20px;
+        background: khaki;
+    }
+    .form {
+        width: 400px;
+        height: 300px;
+        background: darkolivegreen;
+        margin: auto;
+    }
+    input,.index{
+        background: white;
+    }
+    input{
+        border-radius:5px;
+    }
+    .input1{
+        margin-top: 50px;
+        margin-left: 30px;
+        m
+    }
+    .ketqua{
+        margin-right: 35px;
+        position: relative;
+        padding: 5px 0;
+        border-radius: 10px;
+    }
+    .index{
+        margin-right: 20px;
+
+    }
+    .quydoi{
+        padding: 0 20px;
+    }
+    img{
+        position:absolute;
+        width: 60px;
+        margin-left: 253px;
+        border-radius: 10px;
+        padding-bottom: 10px;
+        background: darkolivegreen;
+    }
+    .tong{
+        display: flex;
+        align-items: center;
+        background: darkolivegreen;
+        margin-left: 20px;
+    }
+
+
+</style>
